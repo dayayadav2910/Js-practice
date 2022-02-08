@@ -69,3 +69,70 @@ console.log(styles.shift());
 console.log(styles.unshift("Rep", "Preprep"));
 console.log(styles);
 
+
+// Write an if condition to check that age is between 14 and 90 inclusively.
+
+// “Inclusively” means that age can reach the edges 14 or 90.
+var age;
+if (age >=14 && age<=90); 
+
+// Write an if condition to check that age is between 14 and 90 inclusively.
+// “Inclusively” means that age can reach the edges 14 or 90.
+if (age<14 && age>90);
+
+
+
+// Write the code which asks for a login with prompt.
+
+// If the visitor enters "Admin", then prompt for a password, if the input is an empty line or Esc – show “Canceled”, if it’s another string – then show “I don’t know you”.
+
+// The password is checked as follows:
+
+// If it equals “TheMaster”, then show “Welcome!”,
+// Another string – show “Wrong password”,
+// For an empty string or cancelled input, show “Canceled”
+
+var ans = prompt("Enter any value");
+if(ans === "Admin"){
+  var pass = prompt("Enter Password")
+
+  if(pass === "TheMaster"){
+    alert("Welcome")
+  }
+}
+else if(ans == '' || ans == null){
+  alert("Cancelled")
+}
+else{
+  alert("I dont know you!")
+}
+
+// Rewrite the "switch" into an "if"
+
+if(browser == 'Edge') {
+  alert("You've got the Edge!");
+} else if (browser == 'Chrome'
+ || browser == 'Firefox'
+ || browser == 'Safari'
+ || browser == 'Opera') {
+  alert( 'Okay we support these browsers too' );
+} else {
+  alert( 'We hope that this page looks ok!' );
+}
+
+
+// Rewrite "if" into "switch"
+
+let a = +prompt('a?', '');
+  switch(a)
+  {
+    case 0:
+      alert(0);
+      break;
+    case 1:
+      alert(1);
+      break;
+    case 2:
+    case 3:
+      alert("2,3")
+}
