@@ -136,3 +136,36 @@ let a = +prompt('a?', '');
     case 3:
       alert("2,3")
 }
+
+// Rewrite it, to perform the same, but without if, in a single line.
+
+// Make two variants of checkAge:
+
+// Using a question mark operator ?
+// Using OR ||
+
+function checkage(age){
+  return (age>18) ? true: confirm('Did parents allow you?')
+  }
+  
+function checkAge(age) {
+return (age > 18) || confirm('Did parents allow you?');
+}
+
+
+
+// Write a function min(a,b) which returns the least of two numbers a and b.
+
+function min(a,b){
+  return a<b? a : b
+}
+console.log(min(1,1))
+
+
+// Write a function pow(x,n) that returns x in power n. Or, in other words, multiplies x by itself n times and returns the result.
+const x = prompt("");
+const y = prompt("");
+pow(x,y)
+function pow(x,y){
+	console.log(Math.pow(x,y))
+}
