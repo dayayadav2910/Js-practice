@@ -169,3 +169,89 @@ pow(x,y)
 function pow(x,y){
 	console.log(Math.pow(x,y))
 }
+
+
+// Create an empty object user.
+// Add the property name with the value John.
+// Add the property surname with the value Smith.
+// Change the value of the name to Pete.
+// Remove the property name from the object.
+const user={
+  name : "Daya",
+  surname : "Yadav",
+};
+user.name = "Kiran";
+delete user.name;
+alert(user)
+
+
+// Write the function isEmpty(obj) which returns true if the object has no properties, false otherwise. Should work like that:
+
+let schedule = {};
+function isEmpty(obj) {
+  for (let key in obj) {
+    return true;
+  }
+  return false;
+}
+alert(isEmpty(schedule))
+
+
+
+let salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130
+}
+sum = 0;
+for(let key in salaries){
+    sum += salaries[key]
+}
+alert(sum)
+
+
+// Objects
+// Task 1
+// Write the code, one line for each action:
+
+// Create an empty object user.
+// Add the property name with the value John.
+// Add the property surname with the value Smith.
+// Change the value of the name to Pete.
+// Remove the property name from the object.
+
+user = {}
+user.name = "Daya"
+user.surname= "Yadav"
+user.name = "Kiran"
+alert(user)
+delete(user.name)
+alert(user)
+
+
+
+// Class 
+class Human{
+  
+  gender = "Male"
+  
+  printGender(){
+    console.log(this.gender)
+  }
+}
+class Person extends Human{
+    name= "Daya"
+    age = 25
+    gender = "Female"
+  
+  printName(){
+    console.log(this.name, this.age)
+  }
+}
+const p = new Person();
+const h = new Human();
+p.printName()
+p.printGender();
+
+
+
