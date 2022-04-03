@@ -253,5 +253,44 @@ const h = new Human();
 p.printName()
 p.printGender();
 
+// coping Objects and References using assignment operatior.  
+let person = {
+  name : "Daya"
+}
 
+let newPerson = person;
+
+console.log(newPerson)
+
+newPerson.name = "Kiran"
+
+console.log(newPerson)
+
+
+
+// coping Objects and References using Spred Operator 
+
+let person = {
+  name : "Daya"
+}
+
+let newPerson = {
+  ...person
+};
+
+console.log(person)
+
+newPerson.name = "Kiran"
+
+console.log(person)
+
+// Map Fucntion
+
+const numbers = [1,2,3]
+const arrayNumbers = numbers.map((num)=>{
+    return num *2
+})
+
+console.log(numbers)
+console.log(arrayNumbers)
 
